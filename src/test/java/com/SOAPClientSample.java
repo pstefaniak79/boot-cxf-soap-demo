@@ -340,11 +340,19 @@ public class SOAPClientSample {
  <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
 	<env:Header>
 		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
-			<wsse:BinarySecurityToken EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="X509Token">MIIEmDCCA4CgAwIBAgIQWqFOg5Xcex9Y/6mNfeipuDANBgkqhkiG9w0BAQsFADBpMQswCQYDVQQGEwJJRTEeMBwGA1UEChMVUmV2ZW51ZSBDb21taXNzaW9uZXJzMSAwHgYDVQQLExdSZXZlbnVlIE9uLUxpbmUgU2VydmljZTEYMBYGA1UEAxMPREVWIFJPUyBDQSAyMDIxMB4XDTE4MDMyODA4Mjk1N1oXDTIyMDYwNzE3MzExMVowPzELMAkGA1UEBhMCSUUxDTALBgNVBAoTBFRFU1QxEjAQBgNVBAsTCTk5OTk2MzExMDENMAsGA1UEAxMEVEVTVDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL8VLnVrMl8hk09qlksCXqTEUiK2w1FgniLu51jkQ7JOlescCJzRVmHJsmZYVYMEWivdtPm6geBsz+iNe197I9iqHMuqsO2OUrH/RepW9rj9Y0Knz81VgZwA12KLGmr1oxX0oStejk1q19W5oEHt1103H8AhWIp+ZZx3AQo7TIxD5gRseEIbOu7MNmTL0kjxi4P43Vg3Nr8Jwwdm7BiBIGTTgV6Xnz5BOm7Q5Gqd3B7/HogTdRYit3XzrzCOExC4c4jzuLixjynTKnrMaZiqO91cbkPCrSjpY9Tol390TC4oti8K+ODXK9A1UxKeixyDq9CuD7ccAaQNUp7Tkgda5UsCAwEAAaOCAWQwggFgMB8GA1UdIwQYMBaAFKEt5xi09serBBpMDFevig/M9P/wMIIBDwYDVR0gBIIBBjCCAQIwgf8GCyqCdLvoIwEBAQEBMIHvMBoGCCsGAQUFBwIBFg53d3cucmV2ZW51ZS5pZTCB0AYIKwYBBQUHAgIwgcMagcBDZXJ0aWZpY2F0ZXMgaXNzdWVkIHVuZGVyIHRoaXMgQ1AgYXJlIHF1YWxpZmllZCBjZXJ0aWZpY2F0ZXMgdW5kZXIgdGhlIEVsZWN0cm9uaWMgQ29tbWVyY2UgQWN0IDIwMDAgZm9yIHVzZSBieSBBcHByb3ZlZCBvciBBdXRob3Jpc2VkIHBlcnNvbnMgb25seSB0byBjb21tdW5pY2F0ZSB3aXRoIHRoZSBSZXZlbnVlIENvbW1pc3Npb25lcnMwCwYDVR0PBAQDAgbAMB0GA1UdDgQWBBTS91SeurUDG788GWZt/cJhgTVL4jANBgkqhkiG9w0BAQsFAAOCAQEAEGjWKAnpLDDtXR+G8Wq5KGZ6Nxnehv3nVtc/iEs+tw5EeChU9beCEmgLF1vV3QFCfil8ta4k0uB8ZFUKIbMhF4JHXTJaMo39e8kq+UGReAgJxHfw5YGcngwGBLhZV1ut+1HKgbWLCUnji7zOOMSkv2flkmubOqsxIgYrvcSw24d0/o+pyN9PKgRYRcizbBFjthQX1VzeF32dvprorXUqEQ+3HcbsvIBdSjF7IbwECO6iABir2aKdhCQm+poVPD6SmOzRoHggrvniAmUKy3czQKKYiG1cyoJZ/6u4o3naTWn/Q/egZGH9qTLM2eiQzYQ2otViw45HSPtuyUEsfpdBqQ==</wsse:BinarySecurityToken>
+			<wsse:BinarySecurityToken
+			    EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary"
+			    ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"
+			    wsu:Id="X509Token">
+
+			    MIIEmDCCA4CgAwIBAgIQWqFOg5Xcex9Y/6mNfeipuDANBgkqhkiG9w0BAQsFADBpMQswCQYDVQQGEwJJRTEeMBwGA1UEChMVUmV2ZW51ZSBDb21taXNzaW9uZXJzMSAwHgYDVQQLExdSZXZlbnVlIE9uLUxpbmUgU2VydmljZTEYMBYGA1UEAxMPREVWIFJPUyBDQSAyMDIxMB4XDTE4MDMyODA4Mjk1N1oXDTIyMDYwNzE3MzExMVowPzELMAkGA1UEBhMCSUUxDTALBgNVBAoTBFRFU1QxEjAQBgNVBAsTCTk5OTk2MzExMDENMAsGA1UEAxMEVEVTVDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL8VLnVrMl8hk09qlksCXqTEUiK2w1FgniLu51jkQ7JOlescCJzRVmHJsmZYVYMEWivdtPm6geBsz+iNe197I9iqHMuqsO2OUrH/RepW9rj9Y0Knz81VgZwA12KLGmr1oxX0oStejk1q19W5oEHt1103H8AhWIp+ZZx3AQo7TIxD5gRseEIbOu7MNmTL0kjxi4P43Vg3Nr8Jwwdm7BiBIGTTgV6Xnz5BOm7Q5Gqd3B7/HogTdRYit3XzrzCOExC4c4jzuLixjynTKnrMaZiqO91cbkPCrSjpY9Tol390TC4oti8K+ODXK9A1UxKeixyDq9CuD7ccAaQNUp7Tkgda5UsCAwEAAaOCAWQwggFgMB8GA1UdIwQYMBaAFKEt5xi09serBBpMDFevig/M9P/wMIIBDwYDVR0gBIIBBjCCAQIwgf8GCyqCdLvoIwEBAQEBMIHvMBoGCCsGAQUFBwIBFg53d3cucmV2ZW51ZS5pZTCB0AYIKwYBBQUHAgIwgcMagcBDZXJ0aWZpY2F0ZXMgaXNzdWVkIHVuZGVyIHRoaXMgQ1AgYXJlIHF1YWxpZmllZCBjZXJ0aWZpY2F0ZXMgdW5kZXIgdGhlIEVsZWN0cm9uaWMgQ29tbWVyY2UgQWN0IDIwMDAgZm9yIHVzZSBieSBBcHByb3ZlZCBvciBBdXRob3Jpc2VkIHBlcnNvbnMgb25seSB0byBjb21tdW5pY2F0ZSB3aXRoIHRoZSBSZXZlbnVlIENvbW1pc3Npb25lcnMwCwYDVR0PBAQDAgbAMB0GA1UdDgQWBBTS91SeurUDG788GWZt/cJhgTVL4jANBgkqhkiG9w0BAQsFAAOCAQEAEGjWKAnpLDDtXR+G8Wq5KGZ6Nxnehv3nVtc/iEs+tw5EeChU9beCEmgLF1vV3QFCfil8ta4k0uB8ZFUKIbMhF4JHXTJaMo39e8kq+UGReAgJxHfw5YGcngwGBLhZV1ut+1HKgbWLCUnji7zOOMSkv2flkmubOqsxIgYrvcSw24d0/o+pyN9PKgRYRcizbBFjthQX1VzeF32dvprorXUqEQ+3HcbsvIBdSjF7IbwECO6iABir2aKdhCQm+poVPD6SmOzRoHggrvniAmUKy3czQKKYiG1cyoJZ/6u4o3naTWn/Q/egZGH9qTLM2eiQzYQ2otViw45HSPtuyUEsfpdBqQ==
+			</wsse:BinarySecurityToken>
+
 			<wsu:Timestamp wsu:Id="TS">
 				<wsu:Created>2018-09-05T13:57:41.449Z</wsu:Created>
 				<wsu:Expires>2018-09-05T13:58:11.462Z</wsu:Expires>
 			</wsu:Timestamp>
+
 			<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 				<ds:SignedInfo>
 					<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
@@ -354,29 +362,31 @@ public class SOAPClientSample {
 							<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
 						</ds:Transforms>
 						<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-						<ds:DigestValue>+I/W7eTNgtLlOtxazFh+vjAG+MCUET2+LJ2yu3+iP4A6yJznTkdQiJ34onWE8SYAoZUYD2MKvsHt
-Wz++X9wzEA==</ds:DigestValue>
+						<ds:DigestValue>+I/W7eTNgtLlOtxazFh+vjAG+MCUET2+LJ2yu3+iP4A6yJznTkdQiJ34onWE8SYAoZUYD2MKvsHtWz++X9wzEA==</ds:DigestValue>
 					</ds:Reference>
 					<ds:Reference URI="#TS">
 						<ds:Transforms>
 							<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
 						</ds:Transforms>
 						<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
-						<ds:DigestValue>Jr/9zWaQ0Y7VBQE9OM6HPwzX+AD7tNnAiJFYqRdF0E+b40c9JZt/f4w0x25v9kKMszAovhgmbEQc
-1ZrVzG5d2Q==</ds:DigestValue>
+						<ds:DigestValue>Jr/9zWaQ0Y7VBQE9OM6HPwzX+AD7tNnAiJFYqRdF0E+b40c9JZt/f4w0x25v9kKMszAovhgmbEQc1ZrVzG5d2Q==</ds:DigestValue>
 					</ds:Reference>
 				</ds:SignedInfo>
-				<ds:SignatureValue>GPBxhqQ6aBcIQDpphqboZsTJYjbM6FJcnpDckUjNymp4MZZpPpasn1eo0CWKOM3GxqKh1BiNt586
-YIPrDne6gkyYtadRiLMKQKFwWpQDvjGTtjfLfi5EHzTyD2OhAH+VswOvsNraLlDC8Ph4qc6rpCu2
-HwiRW/vl+8a2v3pyL/c=</ds:SignatureValue>
+
+				<ds:SignatureValue>GPBxhqQ6aBcIQDpphqboZsTJYjbM6FJcnpDckUjNymp4MZZpPpasn1eo0CWKOM3GxqKh1BiNt586YIPrDne6gkyYtadRiLMKQKFwWpQDvjGTtjfLfi5EHzTyD2OhAH+VswOvsNraLlDC8Ph4qc6rpCu2HwiRW/vl+8a2v3pyL/c=</ds:SignatureValue>
+
 				<ds:KeyInfo>
 					<wsse:SecurityTokenReference>
 						<wsse:Reference URI="#X509Token"/>
 					</wsse:SecurityTokenReference>
 				</ds:KeyInfo>
+
 			</ds:Signature>
 		</wsse:Security>
 	</env:Header>
+
+
+
 	<env:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="Body">
 		<rpn:LookupRPNRequest xmlns:rpn="http://www.ros.ie/schemas/paye-employers/v1/rpn/">
 			<rpn:EmployerRegistrationNumber>8001259UH</rpn:EmployerRegistrationNumber>
